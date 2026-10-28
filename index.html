@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f7f4">
+    <meta name="description"
+        content="Portfolio of Raven Miguel Culis, a junior full-stack developer working with Laravel, PHP, JavaScript, and MySQL.">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="canonical" href="https://YOUR-SITE-URL/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Raven Miguel Culis">
+    <meta property="og:title" content="Raven Miguel Culis | Junior Full-Stack Developer">
+    <meta property="og:description"
+        content="Junior full-stack developer building records-management systems with Laravel, PHP, JavaScript, and MySQL. Open to junior developer and software engineer roles.">
+    <meta property="og:url" content="https://YOUR-SITE-URL/">
+    <meta property="og:image" content="https://YOUR-SITE-URL/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Raven Miguel Culis, Junior Full-Stack Developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Raven Miguel Culis | Junior Full-Stack Developer">
+    <meta name="twitter:description"
+        content="Junior full-stack developer building records-management systems with Laravel, PHP, JavaScript, and MySQL.">
+    <meta name="twitter:image" content="https://YOUR-SITE-URL/og-image.png">
+    <title>Raven Miguel Culis | Junior Full-Stack Developer</title>
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("raven-portfolio-theme");
+            const systemPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+            document.documentElement.dataset.theme = savedTheme || (systemPrefersDark ? "dark" : "light");
+        } catch {
+            document.documentElement.dataset.theme = "light";
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="wordmark" href="#top" aria-label="Raven Miguel Culis, home">
+                <span class="wordmark-mark" aria-hidden="true">
+                    <span>RC</span>
+                    <img class="wordmark-mark-photo" src="formal_picture.png" alt="" width="72" height="72"
+                        onerror="this.parentElement.classList.add('has-photo-error')">
+                </span>
+                <span>Raven Miguel Culis</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                    <path d="M3 5h14M3 10h14M3 15h14"></path>
+                </svg>
+                <span>Menu</span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" type="button" aria-label="Toggle color theme" aria-pressed="false">
+                    <svg class="icon-sun" viewBox="0 0 20 20" aria-hidden="true">
+                        <circle cx="10" cy="10" r="3.4"></circle>
+                        <path
+                            d="M10 1.8v2M10 16.2v2M1.8 10h2M16.2 10h2M4.2 4.2l1.4 1.4m8.8 8.8 1.4 1.4m0-11.6-1.4 1.4m-8.8 8.8-1.4 1.4">
+                        </path>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M16.4 12.2A7 7 0 0 1 7.8 3.6 7.1 7.1 0 1 0 16.4 12.2Z"></path>
+                    </svg>
+                    <span class="theme-label">Light mode</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title">Building web systems for the work behind every record.</h1>
+                <p>I'm Raven Miguel Culis, a Junior Full-Stack Developer working with Laravel, PHP, JavaScript, and
+                    MySQL. I build practical tools for managing records and keeping workflows clear.</p>
+                <p class="hero-status"><span class="status-mark" aria-hidden="true"></span>Seeking junior developer or
+                    software engineer roles</p>
+                <p class="hero-location">Calamba City, Laguna, Philippines</p>
+                <dl class="hero-stats" aria-label="Key results">
+                    <div>
+                        <dt>DHSUD internship</dt>
+                        <dd>6 months</dd>
+                    </div>
+                    <div>
+                        <dt>Agency records managed</dt>
+                        <dd>1,000+</dd>
+                    </div>
+                    <div>
+                        <dt>Less manual processing (est.)</dt>
+                        <dd>30%</dd>
+                    </div>
+                </dl>
+                <div class="hero-actions">
+                    <a class="button-primary" href="#projects">Explore my work</a>
+                    <a class="button-secondary" href="resume.pdf" download>Download resume</a>
+                    <a class="text-link" href="mailto:ravenm.culis@gmail.com">Email me</a>
+                </div>
+            </div>
+
+            <aside class="hero-index" aria-label="Featured projects" aria-roledescription="carousel">
+                <div class="index-viewport" aria-live="polite">
+                    <div class="index-slide is-active" data-title="DHSUD Records Management System">
+                        <div class="index-sheet">
+                            <div class="index-top">
+                                <div>
+                                    <p class="index-name">DHSUD Records Management System</p>
+                                    <p class="index-caption">Built to digitize department record-keeping</p>
+                                </div>
+                                <span class="index-tab">DHSUD</span>
+                            </div>
+                            <ul class="feature-index">
+                                <li><span>Type</span><span>Internal web system</span></li>
+                                <li><span>Setting</span><span>Government agency</span></li>
+                                <li><span>Role</span><span>Full-stack intern</span></li>
+                                <li><span>Stack</span><span>Laravel, MySQL</span></li>
+                            </ul>
+                            <div class="index-foot">
+                                <a href="#projects">Read case study</a>
+                                <a href="https://github.com/Rabenaben/DHSUD-R4A-Records" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index-slide" data-title="Barangay Records Management System" inert>
+                        <div class="index-sheet">
+                            <div class="index-top">
+                                <div>
+                                    <p class="index-name">Barangay Records Management System</p>
+                                    <p class="index-caption">Capstone project built with vanilla PHP</p>
+                                </div>
+                                <span class="index-tab">BRGY</span>
+                            </div>
+                            <ul class="feature-index">
+                                <li><span>Type</span><span>Records web system</span></li>
+                                <li><span>Setting</span><span>Barangay operations</span></li>
+                                <li><span>Role</span><span>Capstone developer</span></li>
+                                <li><span>Stack</span><span>Vanilla PHP, MySQL</span></li>
+                            </ul>
+                            <div class="index-foot">
+                                <a href="#projects">Read case study</a>
+                                <a href="https://github.com/Rabenaben/BRGY-3-RMS" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="index-next" type="button" aria-label="Show next project">
+                    <svg viewBox="0 0 20 20" aria-hidden="true">
+                        <path d="M7.5 4.5 13 10l-5.5 5.5"></path>
+                    </svg>
+                </button>
+            </aside>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="section-heading">
+                <h2 id="about-title">About</h2>
+            </div>
+            <div class="about-layout">
+                <p class="about-aside">Internal systems and records management.</p>
+                <div class="about-copy">
+                    <p>I'm a junior full-stack developer with hands-on experience building and maintaining web
+                        applications using Laravel, PHP, HTML, CSS, JavaScript, and MySQL.</p>
+                    <p>During my six-month internship at the Department of Human Settlements and Urban Development, I
+                        developed internal systems, maintained structured records, and worked with cross-functional
+                        teams on support and feature improvements.</p>
+                    <p>I'm looking for a junior developer or software engineer role where I can contribute to reliable
+                        web products and keep growing as an engineer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="section-heading">
+                <h2 id="skills-title">Skills</h2>
+                <p>The tools most relevant to my full-stack work are highlighted first.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Languages and frameworks</h3>
+                    <ul class="skill-list">
+                        <li class="is-core">Laravel</li>
+                        <li class="is-core">PHP</li>
+                        <li class="is-core">MySQL</li>
+                        <li class="is-core">JavaScript</li>
+                        <li class="is-core">HTML5</li>
+                        <li class="is-core">CSS3</li>
+                        <li class="is-core">Tailwind CSS</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Data</h3>
+                    <ul class="skill-list">
+                        <li class="is-core">SQL</li>
+                        <li>Relational database design</li>
+                        <li>Data management</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Tools and platforms</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Postman</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Testing and quality</h3>
+                    <ul class="skill-list">
+                        <li>Debugging</li>
+                        <li>Feature and unit testing</li>
+                        <li>System validation</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3>Soft skills</h3>
+                    <ul class="skill-list">
+                        <li>Problem-solving</li>
+                        <li>Teamwork</li>
+                        <li>Communication</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-title">
+            <div class="section-heading">
+                <h2 id="experience-title">Experience</h2>
+                <p>Building and supporting internal systems with the people who use them.</p>
+            </div>
+
+            <article class="experience-card" aria-labelledby="experience-role">
+                <header class="experience-head">
+                    <div>
+                        <h3 id="experience-role">Junior Full-Stack Developer Intern</h3>
+                        <p>Department of Human Settlements and Urban Development (DHSUD) - On-site</p>
+                    </div>
+                    <div class="date-stamp"><time datetime="2025-11">Nov 2025</time> - <time datetime="2026-04">Apr
+                            2026</time></div>
+                </header>
+                <div class="case-content">
+                    <div class="case-block">
+                        <h4>Problem</h4>
+                        <p>Agency operations needed an internal web system and accurate, well-documented records.</p>
+                    </div>
+                    <div class="case-block">
+                        <h4>What I did</h4>
+                        <ul>
+                            <li>Developed and maintained an internal system using Laravel and MySQL.</li>
+                            <li>Organized and updated agency records, and supported bug fixes and feature improvements
+                                with cross-functional teams.</li>
+                            <li>Joined code reviews and Git/GitHub version-control workflows.</li>
+                        </ul>
+                    </div>
+                    <div class="case-block">
+                        <h4>Tools</h4>
+                        <div class="tool-line" aria-label="Tools used">
+                            <span>Laravel</span><span>PHP</span><span>MySQL</span><span>Git</span><span>GitHub</span>
+                        </div>
+                    </div>
+                    <div class="case-block result-block">
+                        <h4>Result</h4>
+                        <p>Reduced manual processing time by an estimated 30%.</p>
+                        <p>Managed 1,000+ agency records while maintaining data accuracy and documentation standards.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="section-heading">
+                <h2 id="projects-title">Projects</h2>
+                <p>Two records-management systems built for public-service workflows.</p>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card" aria-labelledby="dhsud-project-title">
+                    <header class="project-head">
+                        <div class="project-title-row">
+                            <h3 id="dhsud-project-title">DHSUD Records Management System</h3>
+                            <span class="project-mark" aria-hidden="true">R</span>
+                        </div>
+                        <p>A web-based system built to digitize and streamline department record-keeping.</p>
+                        <a class="project-link" href="https://github.com/Rabenaben/DHSUD-R4A-Records" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                    </header>
+                    <div class="project-body">
+                        <div class="case-block">
+                            <h4>Problem</h4>
+                            <p>Department records needed a more streamlined way to manage permissions, locate files, and
+                                track borrowed records.</p>
+                        </div>
+                        <div class="case-block">
+                            <h4>What I built</h4>
+                            <ul>
+                                <li>Role-based access across departments and unique QR codes for record lookup.</li>
+                                <li>Due-date notifications for borrowed records, plus search and filtering.</li>
+                                <li>API endpoint checks in Postman before front-end integration.</li>
+                            </ul>
+                        </div>
+                        <div class="case-block">
+                            <h4>Tools</h4>
+                            <div class="tool-line" aria-label="Tools used">
+                                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>Tailwind
+                                    CSS</span><span>Postman</span>
+                            </div>
+                        </div>
+                        <div class="case-block result-block">
+                            <h4>Result</h4>
+                            <p>QR codes enabled instant lookup and reduced manual search time. Automated due-date
+                                notifications alerted departments when borrowed records were nearing their return
+                                deadline.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card" aria-labelledby="barangay-project-title">
+                    <header class="project-head">
+                        <div class="project-title-row">
+                            <h3 id="barangay-project-title">Barangay Records Management System</h3>
+                            <span class="project-mark" aria-hidden="true">B</span>
+                        </div>
+                        <p>A capstone project for barangay operations, built with vanilla PHP and no frameworks.</p>
+                        <a class="project-link" href="https://github.com/Rabenaben/BRGY-3-RMS" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                    </header>
+                    <div class="project-body">
+                        <div class="case-block">
+                            <h4>Problem</h4>
+                            <p>Barangay staff needed a records system for resident information, case histories,
+                                documents, and follow-ups.</p>
+                        </div>
+                        <div class="case-block">
+                            <h4>What I built</h4>
+                            <ul>
+                                <li>Staff and administrator login with role-based access.</li>
+                                <li>SMS alerts for document pickup and blotter follow-up meetings.</li>
+                                <li>Report and clearance generation, plus resident-record search and filtering.</li>
+                            </ul>
+                        </div>
+                        <div class="case-block">
+                            <h4>Tools</h4>
+                            <div class="tool-line" aria-label="Tools used">
+                                <span>PHP</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>MySQL</span>
+                            </div>
+                        </div>
+                        <div class="case-block result-block">
+                            <h4>Result</h4>
+                            <p>Search and filtering enabled fast access to resident records and case histories. SMS
+                                notifications alerted residents to document pickup schedules and blotter follow-up
+                                meetings.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="education" aria-labelledby="education-title">
+            <div class="section-heading">
+                <h2 id="education-title">Education</h2>
+            </div>
+            <div class="education-card">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>City College of Calamba</p>
+                <p class="education-date">2022 - 2026</p>
+            </div>
+        </section>
+
+        <section class="section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-card">
+                <div>
+                    <h2 id="contact-title">Let's talk about the next role.</h2>
+                    <p>I'm seeking junior developer or software engineer opportunities. Email is the fastest way to
+                        reach me.</p>
+                    <a class="contact-primary" href="mailto:ravenm.culis@gmail.com">Email ravenm.culis@gmail.com</a>
+                </div>
+                <div class="contact-more">
+                    <p class="contact-label">Also find me here</p>
+                    <ul class="contact-list">
+                        <li><a class="contact-chip" href="https://linkedin.com/in/raven-culis" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a class="contact-chip" href="https://github.com/Rabenaben" target="_blank"
+                                rel="noopener noreferrer">GitHub</a></li>
+                    </ul>
+                    <a class="contact-phone" href="tel:+639296220847">Call +63 929 622 0847</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p>Raven Miguel Culis - Junior Full-Stack Developer</p>
+            <a href="#top">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
